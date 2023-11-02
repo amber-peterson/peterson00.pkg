@@ -1,0 +1,14 @@
+Homework 6: Creating a dictionary for dataset "crabs.csv"
+Columns:
+-Character Columns
+color
+sex
+-Numeric Columns
+frontal_lobe
+rear_width
+carapace_length
+carapac_width
+body_depth
+Latitude
+
+variable_description<- c("color", "sex", "frontal_lobe", "rear_width", "carapace_length", "carapace_width", "body_depth", "latitude") variable_type<- c(1,1,0,0,0,0,0,0)

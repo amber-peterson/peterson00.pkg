@@ -1,0 +1,12 @@
+---
+title: "CrabsTutorial"
+author: "Amber Peterson"
+date: "2023-10-31"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The Peterson R Package is used to manipulate and process data taken on crabs. Amber Peterson and Alex fergueson have designed this package keeping first-time to intermediate users of R in mind to manipulate, analyze, and visualize data with ease.  

@@ -1,0 +1,1 @@
+This function will create a bar graph with the package author's (my) own default design. 

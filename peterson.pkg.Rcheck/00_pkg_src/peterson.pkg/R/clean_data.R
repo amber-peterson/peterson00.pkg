@@ -1,0 +1,1 @@
+This function will remove NAs or other missing data points from our data set. 
