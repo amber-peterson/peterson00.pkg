@@ -10,13 +10,13 @@ Authors@R: c(
 Description: An R package used for processing, analyzing, and manipulating crabs data. Functions allow visualization of data on a scatter plot graph, statistical testing to analyze variance across data points, and manipulation of data through multiplication. Users may also clean data of NAs with this package. 
 License: MIT + file LICENSE
 Depends: R(>= 2.10)
-Imports: tidyverse, broom, ggplot
+Imports: tidyverse, broom
 RoxygenNote: 7.1.1
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
 Encoding: UTF-8
 Roxygen: list(markdown= TRUE)
 NeedsCompilation: no
-Packaged: 2023-10-24 19:24:33 UTC; r2159928
+Packaged: 2023-11-09 19:27:44 UTC; r2159928
 Author: Amber Peterson [cre, aut]
 Maintainer: Amber Peterson <amber.peterson@selu.edu>
