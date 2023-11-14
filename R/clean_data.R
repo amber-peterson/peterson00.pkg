@@ -16,8 +16,12 @@
 remove_nas<- function(data, columns){
   clean <- data %>%
     na.omit(data) %>%
-    select(all_of({{columns}}))
-  return(clean)
+    select(all_of({{columns}})) 
+  if (sum(is.na(data)) == 0){
+    return(clean)
+  } else {
+    print("NAs still present.")
+    }
 }
 
 #cols<- c("carapace_length", "carapace_width", "rear_width", "color", "sex", "Latitude", "frontal_lobe", "body_depth")
