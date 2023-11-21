@@ -1,14 +1,19 @@
-#This function will take a numeric column from the data set and multiply all values by 2. Then a new column will be generated
+#This function will take a numeric column from the data set and multiply all values by 2. Then a new column will be generated in addition to the original data set.
 
-#add if/else statement for nonnumeric columns
+#'Manipulates selected column and produces an additional column multiplied by 2
+#'Returns data set with new multiplied column
+#'
+#'@param data the crabs data set
+#'@param column numeric column from data set
+#'@param new_column name of the new multiplied column 
+#'@param return new column in addition to original data set
+#'
+#'@export 
 
-multiply2<- function(data, columns) {
-   multiply <- ({{columns}}) *2 
-   if (sum(is.numeric(data)) == 0){
-     return(multiply)
-   } else {
-     print("Must enter column containing numeric value")
-   }
+multiply_2<- function(data, column, new_column){
+  new<- data %>% 
+    mutate(new={{column}}*2) %>% 
+    rename({{new_column}} := new)
+  return(new)
 }
-
-#cols<- c("carapace_length", "carapace_width", "rear_width", "Latitude", "frontal_lobe", "body_depth")
+  

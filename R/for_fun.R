@@ -12,7 +12,7 @@
 #'
 #'@export
 
-barplot<- function(data, column_1, column_2) {
+bar_plot<- function(data, column_1, column_2) {
   bar_plot<- ggplot(data=crabs, mapping= aes(x={{column_1}}, y={{column_2}})) + geom_col()
   return(bar_plot)
 }
