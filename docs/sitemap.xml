@@ -19,6 +19,9 @@
     <loc>/index.html</loc>
   </url>
   <url>
+    <loc>/reference/bar_plot.html</loc>
+  </url>
+  <url>
     <loc>/reference/barplot.html</loc>
   </url>
   <url>
@@ -28,9 +31,15 @@
     <loc>/reference/linear_model.html</loc>
   </url>
   <url>
+    <loc>/reference/multiply_2.html</loc>
+  </url>
+  <url>
     <loc>/reference/plot.html</loc>
   </url>
   <url>
     <loc>/reference/remove_nas.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scatter_plot.html</loc>
   </url>
 </urlset>

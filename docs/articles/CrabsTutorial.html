@@ -94,17 +94,17 @@ Peterson</h4>
 <span><span class="co">## xfun      (0.40    -&gt; 0.41 ) [CRAN]</span></span>
 <span><span class="co">## evaluate  (0.22    -&gt; 0.23 ) [CRAN]</span></span></code></pre>
 <pre><code><span><span class="co">## Installing 8 packages: stringi, stringr, rlang, lifecycle, dplyr, htmltools, xfun, evaluate</span></span></code></pre>
-<pre><code><span><span class="co">## Installing packages into '/tmp/RtmpaAlNLd/temp_libpath130bad6e73'</span></span>
+<pre><code><span><span class="co">## Installing packages into '/tmp/Rtmpgo4LvR/temp_libpath1164737a6e3a'</span></span>
 <span><span class="co">## (as 'lib' is unspecified)</span></span></code></pre>
 <pre><code><span><span class="co">## <span style="color: #00BBBB;">──</span> <span style="color: #00BBBB;">R CMD build</span> <span style="color: #00BBBB;">─────────────────────────────────────────────────────────────────</span></span></span>
-<span><span class="co">## * checking for file ‘/tmp/RtmpBqJ0Lv/remotesb3a212b2f87/amber-peterson-peterson00.pkg-3c942e6/DESCRIPTION’ ... OK</span></span>
+<span><span class="co">## * checking for file ‘/tmp/Rtmprkl0Xd/remotes158b238e54a9/amber-peterson-peterson00.pkg-722918b/DESCRIPTION’ ... OK</span></span>
 <span><span class="co">## * preparing ‘peterson.pkg’:</span></span>
 <span><span class="co">## * checking DESCRIPTION meta-information ... OK</span></span>
 <span><span class="co">## * checking for LF line-endings in source and make files and shell scripts</span></span>
 <span><span class="co">## * checking for empty or unneeded directories</span></span>
 <span><span class="co">## * building ‘peterson.pkg_0.1.tar.gz’</span></span>
 <span><span class="co">## Warning: invalid uid value replaced by that for user 'nobody'</span></span></code></pre>
-<pre><code><span><span class="co">## Installing package into '/tmp/RtmpaAlNLd/temp_libpath130bad6e73'</span></span>
+<pre><code><span><span class="co">## Installing package into '/tmp/Rtmpgo4LvR/temp_libpath1164737a6e3a'</span></span>
 <span><span class="co">## (as 'lib' is unspecified)</span></span></code></pre>
 <p>In this tutorial we are going to use a Crabs data set as the default
 for all functions in this package.</p>
@@ -127,13 +127,13 @@ set.</p>
 input, and produces a simple bar chart. Using two columns from the crabs
 data set, we can easily produce a bar plot using the following
 function:</p>
-<pre><code><span><span class="fu">bar_plot</span><span class="op">(</span><span class="va">crabs</span>, <span class="va">carapace_length</span>, <span class="va">carapace_width</span><span class="op">)</span></span></code></pre>
+<pre><code><span><span class="fu"><a href="../reference/bar_plot.html">bar_plot</a></span><span class="op">(</span><span class="va">crabs</span>, <span class="va">carapace_length</span>, <span class="va">carapace_width</span><span class="op">)</span></span></code></pre>
 <p>Function 2: Creating Scatter Plot</p>
 <p>Similar to the previous function, we can use a scatter plot function
 by inputting our data set and columns x and y. Keep in mind the first
 column in the argument will be the independent variable and the second
 column will be the dependent variable. See example below:</p>
-<pre><code><span><span class="fu">scatter_plot</span><span class="op">(</span><span class="va">crabs</span>, <span class="va">carapace_length</span>, <span class="va">carapace_width</span><span class="op">)</span></span></code></pre>
+<pre><code><span><span class="fu"><a href="../reference/scatter_plot.html">scatter_plot</a></span><span class="op">(</span><span class="va">crabs</span>, <span class="va">carapace_length</span>, <span class="va">carapace_width</span><span class="op">)</span></span></code></pre>
 <p>Function 3: Column multiplication</p>
 <p>This function is used to multiply any selected numeric column by 2
 and will produce an additional column in the data set with the double
@@ -141,7 +141,7 @@ values. Input for this function involves a data set, the column you wish
 to multiply the values in, and the name of the new column with
 multiplied values. The entire data set will return as output with an
 additional multiplied column. Perform the function as follows:</p>
-<pre><code><span><span class="fu">multiply_2</span><span class="op">(</span><span class="va">crabs</span>, <span class="va">carapace_length</span>, <span class="va">carapace_length2</span><span class="op">)</span></span></code></pre>
+<pre><code><span><span class="fu"><a href="../reference/multiply_2.html">multiply_2</a></span><span class="op">(</span><span class="va">crabs</span>, <span class="va">carapace_length</span>, <span class="va">carapace_length2</span><span class="op">)</span></span></code></pre>
 <p>Function 4: Linear Modeling</p>
 <p>Our linear modeling function takes our data set, dependent variable,
 and any number of independent variables from said data. In oprder to use

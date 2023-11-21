@@ -10,7 +10,7 @@ Authors@R: c(
   c(
   person(given= "Alexandria",
   family="Ferguson",
-  role=c("cre","aut"),
+  role=c("aut"),
   email= "alexandria.ferguson@selu.edu")
   )
 Description: An R package used for processing, analyzing, and manipulating crabs data. Functions allow visualization of data on a scatter plot graph, statistical testing to analyze variance across data points, and manipulation of data through multiplication. Users may also clean data of NAs with this package. 
