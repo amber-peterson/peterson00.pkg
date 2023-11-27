@@ -9,4 +9,75 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-The Peterson R Package is used to manipulate and process data taken on crabs. Amber Peterson and Alex fergueson have designed this package keeping first-time to intermediate users of R in mind to manipulate, analyze, and visualize data with ease.  
+```{R}
+devtools::install_github("amber-peterson/peterson00.pkg")
+```
+
+In this tutorial we are going to use a Crabs data set as the default for all functions in this package. 
+
+```{R}
+#install.packages("googlesheets4")
+library(googlesheets4)
+googlesheets4::gs4_deauth()
+crabs <- read_sheet("https://docs.google.com/spreadsheets/d/1W86Z6w67_wQoQAMPxV_7w_NQO1hPy_JPzbwsxONANZA/edit?usp=sharing")
+
+```
+
+
+The Peterson R Package is used to manipulate and process data taken on crabs. Amber Peterson and Alex Ferguson have designed this package keeping first-time to intermediate users of R in mind to manipulate, analyze, and visualize data with ease. With our package, users will be able to create bar and scatter plots, produce multiplied data columns, perform linear model testing, and remove NA values from the data set.   
+
+Function 1: Creating Bar Plots
+
+This function requires data, x-axis column, and y- axis column as input, and produces a simple bar chart. Using two columns from the crabs data set, we can easily produce a bar plot using the following function:
+
+    bar_plot(crabs, carapace_length, carapace_width)
+
+
+Function 2: Creating Scatter Plot
+
+Similar to the previous function, we can use a scatter plot function by inputting our data set and columns x and y. Keep in mind the first column in the argument will be the independent variable and the second column will be the dependent variable.
+See example below:
+
+    scatter_plot(crabs, carapace_length, carapace_width)
+
+
+
+Function 3: Column multiplication
+
+This function is used to multiply any selected numeric column by 2 and will produce an additional column in the data set with the double values. Input for this function involves a data set, the column you wish to multiply the values in, and the name of the new column with multiplied values. The entire data set will return as output with an additional multiplied column.  Perform the function as follows:
+
+
+
+    multiply_2(crabs, carapace_length, carapace_length2)
+
+
+
+
+Function 4: Linear Modeling
+
+Our linear modeling function takes our data set, dependent variable, and any number of independent variables from said data. In oprder to use the function you must input the data used, a column representing the dependent variable, and columns representing independent variables. See below:
+
+
+    linear_model(crabs, "carapace_width", "carapace_length")
+
+
+(Note: you must enter column names with quotation marks)
+
+
+Function 5: Cleaning Data
+
+In order to remove NA values from your data set you may use this function to easily input data and columns you wish to remove NAs from. First you must declare your columns in a variable as follows:
+
+
+
+    cols<- c("carapace_length", "carapace_width", "rear_width", "color", "sex", "Latitude", "frontal_lobe", "body_depth")
+
+
+You can enter all columns in the "cols" variable or just the columns you wish to focus on. After defining a variable you may then proceed with the function:
+
+
+
+    remove_nas(crabs, cols)
+
+
+The function should return your original data set with NAs eliminated.
